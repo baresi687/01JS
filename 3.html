@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3</title>
+
+    <script>
+        // Given an array of numbers: [1,2,31,24,-67,5,3,555,79,-4,21,33,89,-90].
+        // 1) Find the maximum and minimum value of the array.
+        var arr = [1,2,31,24,-67,5,3,555,79,-4,21,33,89,-90];
+
+        console.log(arr);
+
+        function compareNumeric(a, b) {
+            if (a >= b) return 1; // If a > b, it will be positive. If equal, it returns 0.
+            if (a < b) return -1; // if a < b, compareNumeric returns a negative number.
+        };
+
+        var tempArr = arr.sort(compareNumeric);
+        var minValue = tempArr[0];
+        var maxValue = tempArr[tempArr.length - 1];
+
+        document.write("Min value: " + minValue + '<br/>' + "Max value: " + maxValue + '<br/>');
+
+
+        // why array sort doesn't sort correctly
+
+        // https://stackoverflow.com/questions/7000851/array-sort-doesnt-sort-numbers-correctly
+    </script>
+
+</head>
+<body>
+<p>Lesson 1 Classwork Task 3</p>
+</body>
+</html>
