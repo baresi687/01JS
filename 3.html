@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>3</title>
 
     <script>
-        // Given an array of numbers: [1,2,31,24,-67,5,3,555,79,-4,21,33,89,-90].
-        // 1) Find the maximum and minimum value of the array.
-        var arr = [1,2,31,24,-67,5,3,555,79,-4,21,33,89,-90];
+      // Given an array of numbers: [1,2,31,24,-67,5,3,555,79,-4,21,33,89,-90].
+      // 1) Find the maximum and minimum value of the array.
+      var arr = [1, 2, 31, 24, -67, 5, 3, 555, 79, -4, 21, 33, 89, -90];
 
-        console.log(arr);
+      function compareNumeric(a, b) {
+        return a - b;
+      }
 
-        function compareNumeric(a, b) {
-            return a - b
-        };
+      var tempArray = arr.sort(compareNumeric);
+      console.log("My new array: ", tempArray);
 
-        var tempArr = arr.sort(compareNumeric);
-        var minValue = tempArr[0];
-        var maxValue = tempArr[tempArr.length - 1];
+      var minValue = tempArray[0];
+      console.log(minValue);
+      console.log(tempArray.length);
+      var maxValue = tempArray[tempArray.length - 1]; // Last item of array
+      console.log(tempArray[13]);
+      console.log(maxValue);
+      document.write(
+        "My max value is " + maxValue + " and my min value is " + minValue
+      );
 
-        document.write("Min value: " + minValue + '<br/>' + "Max value: " + maxValue + '<br/>');
+      // console.log(arr);
 
+      // function compareNumeric(a, b) {
+      //     return a - b
+      // };
 
-        // why array sort doesn't sort correctly
+      // var tempArr = arr.sort(compareNumeric);
+      // var minValue = tempArr[0];
+      // var maxValue = tempArr[tempArr.length - 1];
 
-        // https://stackoverflow.com/questions/7000851/array-sort-doesnt-sort-numbers-correctly
+      // document.write("Min value: " + minValue + '<br/>' + "Max value: " + maxValue + '<br/>');
+
+      // why array sort doesn't sort correctly
+
+      // https://stackoverflow.com/questions/7000851/array-sort-doesnt-sort-numbers-correctly
     </script>
-
-</head>
-<body>
-<p>Lesson 1 Classwork Task 3</p>
-</body>
+  </head>
+  <body>
+    <p>Lesson 1 Classwork Task 3</p>
+  </body>
 </html>

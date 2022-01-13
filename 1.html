@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>1</title>
 
     <script>
-        // Create an empty user object.
-        // Add the name property with the value Hesh.
-        // Add property surname with value Peter.
-        // Change name to Sokki.
-        // Remove the name property from the object.
+      // Create an empty user object.
+      // Add the name property with the value Hesh.
+      // Add property surname with value Peter.
+      // Change name to Sokki.
+      // Remove the name property from the object.
 
+      var user = {};
+      console.log(user);
+      user.name = "Hesh";
+      console.log(user);
+      user.surName = "Peter";
+      console.log(user);
+      user.name = "Sokki";
+      console.log(user);
+      delete user.name;
+      console.log(user);
     </script>
-
-</head>
-<body>
-<p>Lesson 1 Classwork Task 1</p>
-</body>
+  </head>
+  <body>
+    <p>Lesson 1 Classwork Task 1</p>
+  </body>
 </html>
