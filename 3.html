@@ -12,8 +12,7 @@
         console.log(arr);
 
         function compareNumeric(a, b) {
-            if (a >= b) return 1; // If a > b, it will be positive. If equal, it returns 0.
-            if (a < b) return -1; // if a < b, compareNumeric returns a negative number.
+            return a - b
         };
 
         var tempArr = arr.sort(compareNumeric);
